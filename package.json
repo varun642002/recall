@@ -1,0 +1,17 @@
+{
+  "name": "@varun642002/recall",
+  "version": "1.0.0",
+  "description": "grep across every Claude Code session you have ever had. Local, dependency-free full-text search over your Claude Code transcripts.",
+  "type": "module",
+  "license": "MIT",
+  "author": "varun642002",
+  "bin": { "recall": "bin/recall.mjs" },
+  "homepage": "https://github.com/varun642002/recall",
+  "repository": { "type": "git", "url": "https://github.com/varun642002/recall.git" },
+  "bugs": { "url": "https://github.com/varun642002/recall/issues" },
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node test/smoke.mjs" },
+  "keywords": ["claude", "claude-code", "search", "grep", "transcripts", "history", "cli", "ai", "llm"],
+  "files": ["bin", "lib", "README.md", "LICENSE"],
+  "dependencies": {}
+}

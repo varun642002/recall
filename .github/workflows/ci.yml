@@ -27,4 +27,10 @@ jobs:
         run: node bin/recall.mjs --help
       - name: A miss exits non-zero without crashing
         shell: bash
-        run: node bin/recall.mjs zzzznotpresent --projects ./nope; test $? -eq 1
+        # bash runs with -e, so the failing command must be inside the `if`
+        # or the step aborts before the assertion.
+        run: |
+          if node bin/recall.mjs zzzznotpresent --projects ./nope; then
+            echo "expected a non-zero exit for no matches"
+            exit 1
+          fi

@@ -40,7 +40,7 @@ $ recall cloud run deploy --mine
 ## 🚀 Install
 
 ```bash
-npx @varun642002/recall cors error
+npx github:varun642002/recall cors error
 ```
 
 Or clone it — there's nothing to build:
